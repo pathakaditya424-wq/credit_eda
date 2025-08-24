@@ -93,9 +93,30 @@ This shows class imbalance (data is uneven).
 
 
 ---
+## 🤖 Machine Learning Notes
+- Dataset is highly imbalanced (92% repaid vs 8% default).
+- Traditional models like Logistic Regression struggled with imbalance.
+- XGBoost was chosen as final model because:
+  - Handles imbalance with `scale_pos_weight`.
+  - Provides robust results on tabular data.
+  - Allows feature importance analysis.
+
+## 🚀 Next Steps
+- Fine-tune XGBoost with hyperparameter optimization.
+- Try SMOTE / class balancing for better recall of defaults.
+- Add SHAP values for explainability.
+- (Optional) Deploy as Streamlit dashboard.
 
 ## ⚙️ Requirements
-To run this project, install dependencies:
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- xgboost
 
+Install with:
 ```bash
 pip install -r requirements.txt
+
